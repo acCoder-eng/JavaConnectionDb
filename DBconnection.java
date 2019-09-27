@@ -13,9 +13,9 @@ import java.sql.SQLException;
 public class DBconnection {
 	
 	 final  String JDBC = "com.mysql.jdbc.Driver";
-	 final  String url = "jdbc:mysql://mysql.wmcoder.com:2095/UniApp";
-	 final  String user = "";
-	 final  String pass = "";
+	 final  String url = " ";
+	 final  String user = " ";
+	 final  String pass = " ";
 	 
 	 Connection con = null;
 	 PreparedStatement ps;
@@ -33,7 +33,7 @@ public class DBconnection {
 		 try {
 			 Class.forName("com.mysql.jdbc.Driver");  
 			  con=DriverManager.getConnection(url,user,pass);
-			 System.out.println("baglanti basarılı");
+			 System.out.println("connection successful");
 		 }catch (Exception e) {
 			// TODO: handle exception
 			 e.printStackTrace();
